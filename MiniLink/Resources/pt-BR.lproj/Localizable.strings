@@ -1,0 +1,9 @@
+"alert_error_title" = "Erro";
+"alert_ok" = "OK";
+"empty_list_message" = "Ainda não há links encurtados";
+"enter_url_placeholder" = "Digite a URL";
+"error_generic" = "Algo deu errado";
+"error_invalid_link" = "URL inválida";
+"error_timeout" = "A requisição expirou. Tente novamente.";
+"Recently shortened URLs" = "Recently shortened URLs";
+"shorten_button_title" = "Encurtar";

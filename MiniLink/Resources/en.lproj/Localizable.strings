@@ -1,0 +1,9 @@
+"alert_error_title" = "Error";
+"alert_ok" = "OK";
+"empty_list_message" = "No shortened links yet";
+"enter_url_placeholder" = "Enter URL";
+"error_generic" = "Something went wrong";
+"error_invalid_link" = "Invalid Link";
+"error_timeout" = "Request timed out. Please try again.";
+"Recently shortened URLs" = "Recently shortened URLs";
+"shorten_button_title" = "Shorten";
