@@ -13,6 +13,7 @@ func assertVariantSnapshot<V: View>(
         of: view.environment(\.colorScheme, .light),
         as: .image(layout: layout),
         named: "Light",
+        record: true,
         file: sharedSnapshotFile,
         testName: testName
     )
@@ -20,7 +21,8 @@ func assertVariantSnapshot<V: View>(
         of: view.environment(\.colorScheme, .dark),
         as: .image(layout: layout),
         named: "Dark",
+        record: true,
         file: sharedSnapshotFile,
-        testName: testName
+        testName: testName,
     )
 }
