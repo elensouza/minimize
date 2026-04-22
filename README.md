@@ -39,11 +39,11 @@ MiniLink/
 ### Principais Decisões Técnicas
 
 * **Fluxo de Dados Unidirecional (UDF):**
-    A ViewModel expõe uma `State` struct e recebe `Action` enums via uma função `send(_:)`. Isso garante transições de estado previsíveis e facilita drasticamente a depuração e os testes.
+    A ViewModel expõe uma `State` struct e recebe `Action` enums via uma função `send(_:)`. Isso garante transições de estado previsíveis e facilita a depuração e os testes.
 * **Networking Orientado a Protocolos:**
     O `NetworkClient` é definido como um protocolo, permitindo que diferentes implementações (ex: produção vs. clientes de mock para testes) sejam injetadas sem a necessidade de compilação condicional.
 * **Padrão Factory (Composition Root):**
-    A `AppFactory` é responsável por montar as dependências (cliente de rede → repositório → view model → view). Isso centraliza a configuração e melhora a manutenibilidade do código.
+    A `AppFactory` é responsável por montar as dependências. Isso centraliza a configuração e melhora a manutenibilidade do código.
 * **Abstração de Repositório:**
     O `LinkShorteningRepositoryProtocol` desacopla a ViewModel de detalhes de implementação de rede e mapeia as respostas brutas da API em modelos prontos para a camada de visualização.
 
@@ -89,9 +89,9 @@ Ao projetar o MiniLink, priorizei a escalabilidade e a manutenibilidade, tomando
 
 Considerando um cenário de evolução contínua (como um produto real em produção):
 
-1.  **Persistência de Dados:** Implementaria uma camada de persistência local utilizando **SwiftData** ou CoreData, garantindo que o histórico do usuário estivesse disponível offline.
+1.  **Persistência de Dados:** Implementaria uma camada de persistência local utilizando **SwiftData** ou **CoreData**, garantindo que o histórico do usuário estivesse disponível offline.
 2.  **Monitoramento e Observabilidade:** Adicionaria logs estruturados e integração com ferramentas de analytics (ex: Amplitude/Firebase) para monitorar taxas de erro e performance da rede.
-3.  **Modularização:** Caso o projeto crescesse, o próximo passo seria mover as camadas de `Network` e `DesignSystem` para frameworks independentes (Swift Packages), facilitando o reuso em outros apps da companhia.
+3.  **Modularização:** Caso o projeto crescesse, o próximo passo seria mover as camadas de `Network` e `DesignSystem` para frameworks independentes (Swift Packages), facilitando o reuso em outras features.
 
 ---
 
