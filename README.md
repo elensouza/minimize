@@ -1,5 +1,4 @@
-# Definindo o conteúdo do README em Markdown
-readme_content = """# MiniLink
+# MiniLink
 
 O MiniLink é um aplicativo iOS de encurtamento de URLs desenvolvido com SwiftUI. Ele permite que os usuários insiram uma URL longa, gerem uma versão curta através de um serviço de backend e visualizem o histórico de links recentes.
 
@@ -22,6 +21,7 @@ O projeto utiliza a arquitetura **MVVM (Model-View-ViewModel)** com uma camada d
 
 ### Estrutura de Pastas
 
+```
 MiniLink/
 ├── App/                → Ponto de entrada e composição de dependências
 ├── DesignSystem/       → Tokens de design (Espaçamento, Raio, Cores)
@@ -34,6 +34,7 @@ MiniLink/
 │   └── Models/         → Payloads de Requisição/Resposta (Codable)
 ├── Repository/         → Protocolos e implementações (LinkShorteningRepository)
 └── Resources/          → Strings localizadas e assets
+```
 
 ### Principais Decisões Técnicas
 
@@ -99,4 +100,3 @@ Considerando um cenário de evolução contínua (como um produto real em produ�
 * Xcode 15+
 * iOS 17+
 * Swift 6
-"""
