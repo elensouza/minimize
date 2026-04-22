@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "B41E753F-05A5-4435-A2DC-8ED9F6DCA210",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MiniLink.xcodeproj",
+      "identifier" : "03F351C52F6FAC2E0049F637",
+      "name" : "MiniLink"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MiniLink.xcodeproj",
+        "identifier" : "03F351D22F6FAC300049F637",
+        "name" : "MiniLinkTests"
+      }
+    }
+  ],
+  "version" : 1
+}

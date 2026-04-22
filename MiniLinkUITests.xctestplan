@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "1DBCEF8B-C90C-4C46-A177-EFEC39B8073D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "defaultTestExecutionTimeAllowance" : null,
+    "maximumTestExecutionTimeAllowance" : null,
+    "testExecutionOrdering" : "random",
+    "testRepetitionMode" : "retryOnFailure",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MiniLink.xcodeproj",
+        "identifier" : "03F351DC2F6FAC300049F637",
+        "name" : "MiniLinkUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

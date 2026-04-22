@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "A1349952-93DA-4FAB-B6BA-19D0648A70F1",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MiniLink.xcodeproj",
+        "identifier" : "0D02AE8B2F71EF4000BF50F8",
+        "name" : "MiniLinkSnapshotTests"
+      }
+    }
+  ],
+  "version" : 1
+}
